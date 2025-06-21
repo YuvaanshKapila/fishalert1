@@ -11,7 +11,7 @@ import requests
 app = Flask(__name__)
 
 # Configure Google Generative AI
-genai.configure(api_key='AIzaSyAwg_f0Q_dv0hRFGWowk03cgHPZlmEIQJU')
+genai.configure(api_key='private')
 generation_config = {"temperature": 0.9, "top_p": 1, "top_k": 1, "max_output_tokens": 10}
 model = genai.GenerativeModel("gemini-1.5-flash", generation_config=generation_config)
 
